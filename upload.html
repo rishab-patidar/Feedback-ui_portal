@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Upload Section</title>
+  <link rel="stylesheet" href="upload.css" />
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="logo">Feedback Portal</div>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="About.html">About us</a>
+        </div>
+    </div>
+
+  <div class="upload-section">
+    <input type="file" id="imageInput" accept="image/*" />
+    <input type="text" id="linkInput" placeholder="Enter website link" />
+    <button onclick="uploadData()">Upload</button>
+  </div>
+
+  <div class="display-section" id="displaySection">
+    <!-- Uploaded image and link will show here -->
+  </div>
+  <style>
+    .image-container {
+      text-align: center;
+      background-color: rgb(238, 182, 110);
+      padding: 20px;
+    }
+  
+    .image-container img {
+      max-width: 300px;
+      border:2px solid black ;
+      border-radius: 10px ;
+    }
+  
+    .image-container a {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+  
+    .image-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+
+  <script src="upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    /* Attractive gradient background */
+    /*background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);*/
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    color:white;
+    background-color: #ba81bd;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px 20px;
+    border:2px solid white; 
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks a{
+    color:white;
+    display:inline-block;
+    gap: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(183, 90, 90);
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.hero {
+    /* If you want to keep your hero background image, you can layer it with the gradient background */
+    background: linear-gradient(135deg, rgba(246,211,101,0.7), rgba(253,160,133,0.7)),
+                url('https://via.placeholder.com/1200x400.png?text=UI+Feedback');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+#hed{
+    padding: 20px;
+    margin:auto;
+    align-items: center;
+
+
+}
+.genreSelection {
+display:flex;
+align-items: center;
+justify-content: space-between;
+gap:20px;
+padding: 20px;
+ }
+ 
+.genre a img {
+width: 250px;
+margin: 10px;
+padding: 20px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+border-radius: 10px;
+transition: transform 0.3s ease;
+}
+.genre a img:hover{
+    transform: scale(1.1);
+}
+
+.genre img {
+width: 100%;
+ height: auto;
+ border-radius: 8px;
+}
+.genre a {
+    color:black;
+}
+.genre p{
+    align-items: center;
+}
+.features {
+    background-color: #fff;
+    padding: 2rem 0;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.95);
+}
+.features h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.feature-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content: center;
+}
+.features-item{
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex:1;
+    min-width: 250px;
+    max-width:350px;
+    text-align: center;
+}
+.feedback-section{
+    padding: 2rem 0;
+}
+.cont{
+    font-family: 'Arial', sans-serif;
+  background: linear-gradient(#FFC3A0 0%, #FFAFBD 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+.midEdu{
+    display:flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:20px;
+   padding: 20px;
+   border-radius: 10px;
+transition: transform 0.3s ease;
+}
+.genre a  p{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.edu h2{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.edu a bt {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.f a bt {
+    text-align: center;
+}
+.edu img {
+    width: 320px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    /* background-color: red; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.edu a img {
+    transition: transform 0.3s ease;
+}
+.edu a img :hover{
+    transform:scale(1.1);
+}
+
+
+button.bt {
+    width:100%;
+    margin:10px;
+    padding:20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    text-align: center;
+  }
+  img a bt{
+    color:black;
+  }
+  
+  button.bt:hover {
+    background-color: #0056b3;
+    text-align: center;
+  }
+  .edu h2{
+    padding: auto;
+    align-items: center;
+
+  }
+
+  @media (max-width: 1024px) {
+    .midEdu {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .edu img {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navlinks {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .navlinks a {
+      padding: 10px 0;
+      width: 100%;
+      border-top: 1px solid white;
+    }
+  
+    .feature-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .features h2 {
+      font-size: 1.5rem;
+    }
+  
+    .edu img {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .edu {
+      text-align: center;
+    }
+  
+    .edu h2 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  
+    .features-item {
+      max-width: 90%;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .features h2 {
+      font-size: 1.3rem;
+    }
+  
+    .features-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .features-item p {
+      font-size: 0.9rem;
+    }
+  
+    .edu img {
+      max-width: 90%;
+    }
+  }
+  
+  .chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .chatbot-header {
+    background: #28a745;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+  }
+  
+  .chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  .chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .chatbot-input button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+
+  /* Styling for individual messages */
+.message {
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  max-width: 70%;
+}
+
+.message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #eee;
+  align-self: flex-start;
+}
+
+.button a{
+  margin-left: 45%;
+  background-color: white;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.change{
+  margin-top: 10px;
+}
